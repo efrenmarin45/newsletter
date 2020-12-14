@@ -1,13 +1,19 @@
+/* Initializing base file */
 * {
     box-sizing: border-box;
     font-family: sans-serif;
+    color: #535353;
 }
 
+
+/* Making sure no text decorations on hyperlinks and color matches color scheme */
 a{
     text-decoration: none;
     color: black;
 }
 
+
+/* Setting up background table */
 .wrapper{
     background-color: #ffff;
     margin: 20px auto 20px auto;
@@ -16,6 +22,14 @@ a{
     table-layout: fixed;
 }
 
+
+/* Making sure all titles are consistent */
+.title{
+    color: black;
+}
+
+
+/* Button */
 button{
     padding: 15px 30px 15px 30px;
     background-color: black;
@@ -24,6 +38,12 @@ button{
     margin-bottom: 20px;
 }
 
+button:hover{
+    cursor: pointer;
+}
+
+
+/* Styling for articles */
 .articleColumns{
     text-align: left;
     display: flex;
@@ -32,4 +52,55 @@ button{
 
 .content{
     line-height: 20px;
+}
+
+.articleBreak{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.column{
+    display: inline-block;
+}
+
+.articleBreak::before, .articleBreak::after{
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid black;
+}
+
+.articleBreak::before{
+    margin-right: 1.5em;
+    margin-left: 1em;
+}
+
+.articleBreak::after{
+    margin-left: 1.5em;
+    margin-right: 1em;
+}
+
+
+/* Bottom of Newsletter */
+.footer{
+    text-align: center;
+    padding-bottom: 50px;
+    color: #9c9c9c;
+    line-height: 5px;
+    font-size: 14px;
+}
+
+.footer p{
+    color: #9c9c9c;
+}
+
+.footer a{
+    color: #9c9c9c;
+}
+
+.footer .personalInfo{
+    line-height: 15px;
+    font-size: 18px;
 }
