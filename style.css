@@ -6,11 +6,97 @@
 }
 
 
+
 /* Making sure no text decorations on hyperlinks and color matches color scheme */
 a{
     text-decoration: none;
     color: black;
 }
+
+
+/* Navbar */
+.navbar{
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+
+.navToggle{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 32px;
+}
+
+.main-Nav{
+    list-style-type: none;
+    display: none;
+}
+
+.main-Nav li{
+    text-align: center;
+    margin: 20px auto;
+}
+
+.navItem{
+    text-decoration: none;
+}
+
+.profilePic{
+    width: 3em;
+    border-radius: 50%;
+    margin: 5px 0 10px 30px;
+}
+
+.active{
+    display: flex;
+}
+
+
+
+
+/* Media Query for Desktops */
+@media screen and (min-width: 768px){
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        height: 70px;
+        align-items: center;
+    }
+
+    .main-Nav{
+        display: flex;
+        margin-right: 30px;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .main-Nav li{
+        margin: 0;
+    }
+
+    .navItem{
+        margin-left: 40px;
+    }
+
+    .navToggle{
+        display: none;
+    }
+
+    .navItem:hover{
+        color: green;
+        cursor: pointer;
+    }
+
+    .profilePic{
+        width: 5em;
+        margin: 20px 20px;
+        padding-top: 60px;   
+    }
+}
+
+
 
 
 /* Setting up background table */
@@ -23,10 +109,14 @@ a{
 }
 
 
+
+
 /* Making sure all titles are consistent */
 .title{
     color: black;
 }
+
+
 
 
 /* Button */
@@ -41,6 +131,8 @@ button{
 button:hover{
     cursor: pointer;
 }
+
+
 
 
 /* Styling for articles */
@@ -83,6 +175,8 @@ button:hover{
 }
 
 
+
+
 /* Bottom of Newsletter */
 .footer{
     text-align: center;
@@ -103,4 +197,102 @@ button:hover{
 .footer .personalInfo{
     line-height: 15px;
     font-size: 18px;
+}
+
+
+
+
+/* Homepage Grid */
+.homepageGrid{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 125px;
+}
+
+.gridItem{
+    display: flex;
+    font-size: 58px;
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    border: 5px solid white;
+    -webkit-transition: background-color .25s ease-out;
+    -moz-transition: background-color .25s ease-out;
+    -o-transition: background-color .25s ease-out;
+    transition: background-color .25s ease-out;
+}
+
+.gridItem p{
+    margin: auto;
+    color: white;
+}
+
+
+/* Hover Effects */
+.boxOne:hover{
+    background-color: green;
+    cursor: pointer;
+    transition: .25s linear;
+    transform: translate(-5px, -5px);
+}
+
+.boxTwo:hover{
+    background-color: #0a67c2;
+    cursor: pointer;
+    transition: .25s linear;
+    transform: translate(5px, -5px);
+}
+
+.boxThree:hover{
+    background-color: red;
+    cursor: pointer;
+    transition: .25s linear;
+    transform: translate(-5px, 5px);
+}
+
+.boxFour:hover{
+    background-color: purple;
+    cursor: pointer;
+    transition: .25s linear;
+    transform: translate(5px, 5px);
+}
+
+
+/* Media Query for Desktop */
+@media screen and (min-width: 768px){
+    .homepageGrid{
+        padding-top: 150px;
+    }
+
+    .boxOne:hover{
+        transform: translate(0px, -10px);
+    }
+
+    .boxTwo:hover{
+        transform: translate(0px, -10px);
+    }
+
+    .boxThree:hover{
+        transform: translate(0px, -10px);
+    }
+
+    .boxFour:hover{
+        transform: translate(0px, -10px);
+    }
+}
+
+
+/* About Page */
+.intro{
+    text-align: center;
+    margin: 150px 50px;
+    font-size: 34px;
+}
+
+@media screen and (min-width: 768px){
+    .intro{
+        max-width: 800px;
+        margin: 150px auto;
+    }
 }
