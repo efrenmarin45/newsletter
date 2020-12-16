@@ -14,6 +14,7 @@ a{
 }
 
 
+
 /* Navbar */
 .navbar{
     font-size: 18px;
@@ -54,8 +55,7 @@ a{
 
 
 
-
-/* Media Query for Desktops */
+/* Media Query for Navbar on Desktops */
 @media screen and (min-width: 768px){
     .navbar{
         display: flex;
@@ -98,7 +98,6 @@ a{
 
 
 
-
 /* Setting up background table */
 .wrapper{
     background-color: #ffff;
@@ -110,12 +109,10 @@ a{
 
 
 
-
 /* Making sure all titles are consistent */
 .title{
     color: black;
 }
-
 
 
 
@@ -126,12 +123,12 @@ button{
     color: white;
     border: none;
     margin-bottom: 20px;
+    font-size: 14px;
 }
 
 button:hover{
     cursor: pointer;
 }
-
 
 
 
@@ -174,7 +171,15 @@ button:hover{
     margin-right: 1em;
 }
 
+.goopGenes{
+    position: relative;
+}
 
+.lipBalm{
+    position: absolute;
+    left: 25rem;
+    top: 3rem;
+}
 
 
 /* Bottom of Newsletter */
