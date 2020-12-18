@@ -3,6 +3,7 @@
     box-sizing: border-box;
     font-family: sans-serif;
     color: #535353;
+    padding: 0;
 }
 
 
@@ -109,7 +110,6 @@ a{
     width: 100%;
     max-width: 600px;
     table-layout: fixed;
-    overflow: scroll;
 }
 
 
@@ -160,10 +160,6 @@ button:hover{
     display: inline-block;
 }
 
-/* .productFlow{
-    width: 98px;
-} */
-
 .articleBreak::before, .articleBreak::after{
     content: '';
     flex: 1;
@@ -182,6 +178,7 @@ button:hover{
 
 .goopGenes{
     position: relative;
+    width: 600px;
 }
 
 .lipBalm{
