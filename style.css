@@ -7,7 +7,6 @@
 }
 
 
-
 /* Making sure no text decorations on hyperlinks and color matches color scheme */
 a{
     text-decoration: none;
@@ -19,6 +18,7 @@ a{
 /* Navbar */
 .navbar{
     font-size: 18px;
+    text-align: center;
 }
 
 .navToggle{
@@ -64,7 +64,7 @@ a{
         display: flex;
         justify-content: space-between;
         padding-bottom: 0;
-        height: 70px;
+        height: 100px;
         align-items: center;
         overflow: visible;
     }
@@ -95,9 +95,9 @@ a{
     }
 
     .profilePic{
-        width: 5em;
-        margin: 20px 20px;
-        padding-top: 60px;   
+        width: 4em;
+        margin: 10px 10px;
+        padding-top: 10px;   
     }
 }
 
@@ -108,7 +108,8 @@ a{
     background-color: #ffff;
     margin: 10px auto 20px auto;
     width: auto;
-    max-width: 600px;
+    min-width: 600px;
+    max-width: 700px;
     table-layout: fixed;
 }
 
@@ -139,7 +140,7 @@ button:hover{
 
 /* Styling for articles */
 .articleColumns{
-    text-align: left;
+    text-align: center;
     display: flex;
     justify-content: center;
 }
@@ -179,6 +180,7 @@ button:hover{
 .goopGenes{
     position: relative;
     width: 600px;
+    margin: auto;
 }
 
 .lipBalm{
@@ -328,7 +330,7 @@ button:hover{
 
 @media screen and (max-width: 385px){
     .productFlow{
-        width: 98px;
+        width: 93px;
     }
 }
 
