@@ -13,12 +13,16 @@ a{
     color: black;
 }
 
+/* table{
+    border: 1px solid red;
+} */
+
 
 
 /* Navbar */
 .navbar{
     font-size: 18px;
-    text-align: center;
+    text-align: justify;
 }
 
 .navToggle{
@@ -147,6 +151,7 @@ button:hover{
 
 .content{
     line-height: 20px;
+    text-align: left;
 }
 
 .articleBreak{
