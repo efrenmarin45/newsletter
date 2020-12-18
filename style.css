@@ -107,7 +107,7 @@ a{
 .wrapper{
     background-color: #ffff;
     margin: 10px auto 20px auto;
-    width: 100%;
+    width: auto;
     max-width: 600px;
     table-layout: fixed;
 }
