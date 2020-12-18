@@ -278,6 +278,9 @@ button:hover{
 
 /* Media Query for Desktop */
 @media screen and (min-width: 768px){
+    .disclaimer{
+        display: none;
+    } 
     .homepageGrid{
         padding-top: 150px;
     }
@@ -314,11 +317,12 @@ button:hover{
 
     .wrapper{
         min-width: 315px;
-    }
+    }   
 
     p{
         font-size: .85em;
     }
+
 
 
 @media screen and (max-width: 590px){
@@ -378,10 +382,6 @@ button:hover{
     .intro{
         max-width: 800px;
         margin: 150px auto;
-    }
-
-    .disclaimer{
-        display: none;
     }
 }
 
