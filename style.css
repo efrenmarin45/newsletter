@@ -278,6 +278,10 @@ button:hover{
 
 /* Media Query for Desktop */
 @media screen and (min-width: 768px){
+    .disclaimer{	
+        display: none;	
+    } 
+    
     .homepageGrid{
         padding-top: 150px;
     }
@@ -361,40 +365,5 @@ button:hover{
 @media screen and (max-width: 385px){
     .productFlow{
         width: 93px;
-    }
-}
-
-
-
-
-/* About Page */
-.intro{
-    width: 600px;
-    text-align: center;
-<<<<<<< HEAD
-    margin: 50px;
-    font-size: 32px;
-=======
-    margin: 150px 50px;
-    font-size: 34px;
-}
-
-@media screen and (min-width: 768px){
-    .intro{
-        max-width: 800px;
-        margin: 150px auto;
-    }
-
-    .disclaimer{
-        display: none;
-    }
->>>>>>> 2807b4982eb1620417e801b2ab45771c8d92cea8
-}
-
-@media screen and (max-width: 768px){
-    .intro{
-        font-size: 38px;
-        margin-top: 50px;
-        margin: auto;
     }
 }
