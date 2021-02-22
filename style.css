@@ -278,9 +278,6 @@ button:hover{
 
 /* Media Query for Desktop */
 @media screen and (min-width: 768px){
-    .disclaimer{
-        display: none;
-    } 
     .homepageGrid{
         padding-top: 150px;
     }
@@ -317,12 +314,11 @@ button:hover{
 
     .wrapper{
         min-width: 315px;
-    }   
+    }
 
     p{
         font-size: .85em;
     }
-
 
 
 @media screen and (max-width: 590px){
@@ -375,8 +371,24 @@ button:hover{
 .intro{
     width: 600px;
     text-align: center;
+<<<<<<< HEAD
     margin: 50px;
     font-size: 32px;
+=======
+    margin: 150px 50px;
+    font-size: 34px;
+}
+
+@media screen and (min-width: 768px){
+    .intro{
+        max-width: 800px;
+        margin: 150px auto;
+    }
+
+    .disclaimer{
+        display: none;
+    }
+>>>>>>> 2807b4982eb1620417e801b2ab45771c8d92cea8
 }
 
 @media screen and (max-width: 768px){
